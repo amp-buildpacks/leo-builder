@@ -58,6 +58,7 @@ jobs:
         registry_uri="ghcr.io"
         registry_repo="${{ github.repository }}"
         version="${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}"
+        version=${version#v}
           
         docker tag builder "${registry_uri}/${registry_repo}:latest"
         docker tag builder "${registry_uri}/${registry_repo}:${version}"
