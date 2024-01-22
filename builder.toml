@@ -14,17 +14,43 @@
 
 description = "A Cloud Native Buildpacks (CNB) builder with Paketo stacks (Jammy Jellyfish) and Leo buildpacks"
 
+# [[buildpacks]]
+#   id = "amp-buildpacks/leo"
+#   uri = "docker://ghcr.io/amp-buildpacks/leo:0.1.5"
+
 [[buildpacks]]
-  id = "amp-buildpacks/leo"
-  uri = "docker://ghcr.io/amp-buildpacks/leo:0.1.5"
+  id = "amp-buildpacks/leo-dist"
+  uri = "docker://ghcr.io/amp-buildpacks/leo-dist:0.1.4"
+
+[[buildpacks]]
+  id = "amp-buildpacks/aleo"
+  uri = "docker://ghcr.io/amp-buildpacks/aleo:0.1.5"
+
+[[buildpacks]]
+  id = "paketo-buildpacks/procfile"
+  uri = "docker://gcr.io/paketo-buildpacks/procfile:5.6.8"
+
 
 [lifecycle]
   version = "0.18.3"
 
 [[order]]
+  # [[order.group]]
+  #   id = "amp-buildpacks/leo"
+  #   version = "0.1.5"
+
   [[order.group]]
-    id = "amp-buildpacks/leo"
+    id = "amp-buildpacks/leo-dist"
+    version = "0.1.4"
+
+  [[order.group]]
+    id = "amp-buildpacks/aleo"
     version = "0.1.5"
+
+  [[order.group]]
+    id = "paketo-buildpacks/procfile"
+    optional = true
+    version = "5.6.8"
 
 [stack]
   id = "io.buildpacks.stacks.jammy"
