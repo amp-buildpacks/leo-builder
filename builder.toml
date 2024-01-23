@@ -24,7 +24,7 @@ description = "A Cloud Native Buildpacks (CNB) builder with Paketo stacks (Jammy
 
 [[buildpacks]]
   id = "amp-buildpacks/aleo"
-  uri = "docker://ghcr.io/amp-buildpacks/aleo:0.1.8"
+  uri = "docker://ghcr.io/amp-buildpacks/aleo:0.1.9"
 
 [[buildpacks]]
   id = "paketo-buildpacks/procfile"
@@ -45,7 +45,7 @@ description = "A Cloud Native Buildpacks (CNB) builder with Paketo stacks (Jammy
 
   [[order.group]]
     id = "amp-buildpacks/aleo"
-    version = "0.1.8"
+    version = "0.1.9"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
