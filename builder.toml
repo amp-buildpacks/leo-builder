@@ -16,12 +16,12 @@ description = "A Cloud Native Buildpacks (CNB) builder with Paketo stacks (Jammy
 
 [[buildpacks]]
   id = "amp-buildpacks/leo"
-  uri = "docker://ghcr.io/amp-buildpacks/leo:0.1.6"
+  uri = "docker://ghcr.io/amp-buildpacks/leo:0.1.7"
 
 [[order]]
   [[order.group]]
     id = "amp-buildpacks/leo"
-    version = "0.1.6"
+    version = "0.1.7"
 
 [stack]
   id = "io.buildpacks.stacks.jammy.tiny"
