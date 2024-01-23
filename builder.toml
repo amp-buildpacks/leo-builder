@@ -24,6 +24,6 @@ description = "A Cloud Native Buildpacks (CNB) builder with Paketo stacks (Jammy
     version = "0.1.6"
 
 [stack]
-  id = "io.buildpacks.stacks.jammy"
-  build-image = "docker.io/paketobuildpacks/build-jammy-base"
-  run-image = "index.docker.io/paketobuildpacks/run-jammy-base"
+  id = "io.buildpacks.stacks.jammy.tiny"
+  build-image = "docker.io/paketobuildpacks/build-jammy-tiny"
+  run-image = "index.docker.io/paketobuildpacks/run-jammy-tiny"
