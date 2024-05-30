@@ -21,7 +21,7 @@ description = "A Cloud Native Buildpacks (CNB) builder with Paketo stacks (Jammy
 [[order]]
   [[order.group]]
     id = "amp-buildpacks/leo"
-    version = "0.4.0"
+    version = "0.5.0"
 
 [stack]
   id = "io.buildpacks.stacks.jammy.tiny"
